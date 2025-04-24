@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f9f9f9;
+}
+
+header {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 10px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+  padding: 16px;
+  border: 2px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card img.main-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.card img.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+}
+
+.card p {
+  margin: 0 0 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.btn {
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* 顏色區分 */
+.red { border-color: red; }
+.blue { border-color: blue; }
+.green { border-color: green; }
+.yellow { border-color: orange; }
+
+.red-btn { background-color: pink; color: darkred; }
+.blue-btn { background-color: lightblue; color: navy; }
+.green-btn { background-color: lightgreen; color: darkgreen; }
+.yellow-btn { background-color: gold; color: darkorange; }
+
+/* Blog 區塊 - minmax 版本 */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin: 20px;
+}
+
+.blog-grid div,
+.blog-media div {
+  background: #eee;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Blog 區塊 - media query 版本 */
+.blog-media {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 20px;
+}
+
+@media (max-width: 800px) {
+  .blog-media {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .blog-media {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>課程練習</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    nav {
+      background-color: #333;
+      color: white;
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    iframe {
+      width: 90%;
+      height: 600px;
+      margin: 30px 0;
+      border: 2px solid #aaa;
+      resize: both;
+      overflow: auto;
+    }
+
+    @media screen and (max-width: 650px) {
+      body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+        top: -150px;
+        scale: 0.8;
+      }
+
+      iframe {
+        grid-column: span 2;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>課程練習</nav>
+
+  <iframe src="card.html" title="卡片作業展示"></iframe>
+
+</body>
+</html>

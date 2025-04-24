@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>卡片展示</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="#">首頁</a></li>
+        <li><a href="#">卡片展示</a></li>
+        <li><a href="#">Blog 區塊</a></li>
+        <li><a href="#">聯絡我們</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="card-container">
+    <div class="card red">
+      <img src="https://i.pravatar.cc/100?img=11" alt="頭像" class="avatar" />
+      <h3>王小明</h3>
+      <p>焊接工程師</p>
+      <button class="btn red-btn">聯絡</button>
+    </div>
+
+    <div class="card blue">
+      <img src="https://picsum.photos/id/1018/200/120" alt="風景" class="main-img" />
+      <h3>旅遊風景</h3>
+      <p>美麗的山景</p>
+      <button class="btn blue-btn">查看更多</button>
+    </div>
+
+    <div class="card green">
+      <img src="https://picsum.photos/id/1022/200/120" alt="海邊" class="main-img" />
+      <h3>城市生活</h3>
+      <p>繁忙都市</p>
+      <button class="btn green-btn">收藏</button>
+    </div>
+
+    <div class="card yellow">
+      <img src="https://picsum.photos/id/1039/200/120" alt="夜空" class="main-img" />
+      <h3>美食饗宴</h3>
+      <p>享受美味</p>
+      <button class="btn yellow-btn">訂閱</button>
+    </div>
+  </section>
+
+  <section>
+    <h3>Blog 區塊 (minmax 版本)</h3>
+    <div class="blog-grid">
+      <div>Blog 1</div><div>Blog 2</div><div>Blog 3</div><div>Blog 4</div>
+      <div>Blog 5</div><div>Blog 6</div>
+    </div>
+
+    <h3>Blog 區塊 (media query 版本)</h3>
+    <div class="blog-media">
+      <div>Blog 1</div><div>Blog 2</div><div>Blog 3</div><div>Blog 4</div>
+      <div>Blog 5</div><div>Blog 6</div>
+    </div>
+  </section>
+</body>
+</html>
